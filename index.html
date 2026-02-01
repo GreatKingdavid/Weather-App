@@ -5,14 +5,35 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weather App</title>
         <link rel="stylesheet" href="style.css">
-        <script src="app.js" defer></script>
+        <script src="jockApi.js" defer></script>
     </head>
     <body>
 
         <div class="card">
             <div class="search">
                 <input type="text" placeholder="Enter city name" spellcheck="false">
-                <button><img src="" alt="" srcset=""></button>
+                <button><img src="./img/search.png" alt="" srcset=""></button>
+            </div>
+            <div class="weather">
+                <img src="img/rain.png" class="weather-icon" alt="" srcset="">
+                <h1 class="temp">22°c</h1>
+                <h2 class="city">Stavropol</h2>
+                <div class="details">
+                    <div class="col">
+                        <img src="img/humidity.png" alt="">
+                        <div>
+                            <p class="humidity">50%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="img/wind.png" alt="">
+                        <div>
+                            <p class="wind">15km/hr</p>
+                            <p>Wind speed</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
