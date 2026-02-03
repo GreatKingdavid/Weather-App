@@ -5,31 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Weather App</title>
         <link rel="stylesheet" href="style.css">
-        <script src="jockApi.js" defer></script>
+        <script src="app.js" defer></script>
     </head>
     <body>
 
         <div class="card">
             <div class="search">
-                <input type="text" placeholder="Enter city name" spellcheck="false">
-                <button><img src="./img/search.png" alt="" srcset=""></button>
+                <input type="text" id="userCity" placeholder="Enter city name"
+                    spellcheck="false">
+                <button id="searchBtn"><img src="./img/search.png" alt
+                        srcset></button>
             </div>
             <div class="weather">
-                <img src="img/rain.png" class="weather-icon" alt="" srcset="">
-                <h1 class="temp">22°c</h1>
-                <h2 class="city">Stavropol</h2>
+                <img src="img/undraw_questions_g2px.svg" id="weatherImg" alt
+                    srcset>
+                <h1 class="temp"></h1>
+                <h2 class="city"></h2>
+                <img style="width: 50%;" id="loading" src="img/Loading Image Free Download (1).gif" alt="" srcset="">
                 <div class="details">
                     <div class="col">
-                        <img src="img/humidity.png" alt="">
+                        <img src="img/humidity.png" alt>
                         <div>
-                            <p class="humidity">50%</p>
+                            <p class="humidity"><img
+                                    style="width: 30px; height: 20px;"
+                                    src="img/question-mark-svgrepo-com.svg" alt
+                                    srcset></p>
                             <p>Humidity</p>
                         </div>
                     </div>
                     <div class="col">
-                        <img src="img/wind.png" alt="">
+                        <img src="img/wind.png" alt>
                         <div>
-                            <p class="wind">15km/hr</p>
+                            <p class="wind"><img
+                                    style="width: 30px; height: 20px;"
+                                    src="img/question-mark-svgrepo-com.svg" alt
+                                    srcset></p>
                             <p>Wind speed</p>
                         </div>
                     </div>
